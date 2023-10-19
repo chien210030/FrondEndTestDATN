@@ -1,8 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
+<!-- <%@ page language="java" contentType="text/html; charset=utf-8"
          pageEncoding="utf-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %> -->
 
 <!doctype html>
 <html lang="en">
@@ -144,7 +144,7 @@
         }
 
     </style>
-</head>
+</head> 
 <body>
 <jsp:include page="Templates/navbar.jsp"/>
 <div class="container-fluid">
@@ -172,7 +172,7 @@
 
                         <tbody>
                         <tr>
-                            <form action="/banhang-hoadon/gethoadon/${i.id}" method="get">
+                            <!-- <form action="/banhang-hoadon/gethoadon/${i.id}" method="get">
 
                                 <td>${i.ma}</td>
                                 <td>
@@ -187,7 +187,7 @@
                                 <td>${i.trangthai == 0 ? 'Chưa Thanh toán':''}</td>
                                 <td><a class="btn btn-primary glyphicon glyphicon-pencil"
                                        href="/banhang-hoadon/gethoadon/${i.id}"></a></td>
-                            </form>
+                            </form> -->
                         </tr>
 
                         </tbody>
