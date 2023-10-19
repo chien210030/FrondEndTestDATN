@@ -16,6 +16,7 @@
          body {
             padding-top: 80px;
             margin: auto;
+            width: 1230px;
         }
 
         #sidebar {
@@ -319,6 +320,44 @@
     
                 </form>
             </div>
+            <div class="row" style="padding-top: 10px">
+                <div class="col-custom" style="padding-top: 10px">
+    
+                    &#160&#160&#160
+                    <div class="col-4">
+                        <!-- <%--                    <button type="submit" id="HuyDonBtn" formmethod="post" class="btn btn-danger"--%>
+                        <%--                            formaction="/banhang-hoadon/huydon"--%>
+                        <%--                            onclick="return confirm('Bạn có muốn hủy hóa đơn này không')">Huy Don--%>
+                        <%--                    </button>--%>
+                        <%--                </div>--%>
+                        &#160&#160&#160
+                        <%--                <div class="col-4">--%> -->
+                        <button type="submit" formmethod="post" formaction="/banhang-hoadon/thanhtoan"
+                                id="btnThanhToanHoaDon"
+                                class="btn btn-success">Thanh Toan
+                        </button>
+    
+                    </div>
+    
+    
+                </div>
+<!--     
+                <%--            <div class="col-custom">--%>
+                <%--                <label>Nhap MaKH</label><input class="">--%>
+                <%--                <a class="btn btn-primary" href="">Check</a>--%>
+                <%--            </div>--%>
+                <div class="col-custom">
+                    <label>Chọn MaKM</label>
+                    <select class="form-control" id="khuyenmai" name="">
+                        <c:forEach items="${khuyenmai}" var="khuyenmai">
+                            <c:if test="${khuyenmai.trangthai == 1}">
+                                <option value="${khuyenmai.giatrigiam}">${khuyenmai.giatrigiam} %</option>
+                            </c:if>
+                        </c:forEach>
+                    </select>
+                </div> -->
+            </div>
+
 
 
         </div>
